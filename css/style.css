@@ -17,7 +17,7 @@
 .text-landing {
     color: white;
     font-size: x-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Roboto, Tahoma, helvetica, arial, sans-serif;
     margin-top: 10px;
 }
 
@@ -54,15 +54,83 @@
     color: black;
 }
 
-.header a.active {
+/* .header a.active {
     background-color: white;
     color: black;
-}
+} */
 
 .header-right {
     float: right;
     padding-top: 20px;
 }
+
+.dc-form-title {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 13px;
+}
+
+.dc-form-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 4px;
+    background-color: #499F82;
+    border-radius: 1px;
+    font-family: Roboto, Tahoma, helvetica, arial, sans-serif;
+}
+
+.dc-page-title {
+    margin-top: 30px;
+}
+
+.dc-form-wrap {
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.cd-email-wrap {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.cd-form-continue-button {
+    display: block;
+    width: 200px;
+    border-radius: 0.25rem;
+    background-color: #50a589;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+
+.cd-form-continue-button:hover{
+    background-color: #84d4ba;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#email {
+    width: 100%;
+    height: 56px;
+    font-size: larger;
+}
+
+#password {
+    width: 100%;
+    height: 56px;
+    font-size: larger;
+}
+
+
+
+
 
 @media screen and (max-width: 561px) {
     .header a {
